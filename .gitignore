@@ -1,0 +1,21 @@
+# IDE files
+.vscode
+.idea
+
+# Test coverage
+coverage
+.nyc_output
+
+# Dependency directories
+node_modules
+obj
+typings
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lock files
+package-lock.json
+yarn.lock

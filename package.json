@@ -1,0 +1,44 @@
+{
+  "name": "react-search-field",
+  "version": "0.0.1",
+  "description": "This is a simple search field component",
+  "main": "dist/SearchField.js",
+  "scripts": {
+    "build:component": "babel src/components --out-dir dist",
+    "build:docs": "webpack",
+    "build": "npm run build:component && npm run build:docs",
+    "dev": "npm run build:docs && webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "searchbar",
+    "search"
+  ],
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "prop-types": "^15.6.0",
+    "typeco": "^0.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "copy-webpack-plugin": "^4.3.1",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "author": "Farhad Yasir",
+  "license": "MIT"
+}
