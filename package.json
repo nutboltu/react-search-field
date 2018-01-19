@@ -1,6 +1,6 @@
 {
   "name": "react-search-field",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a simple search field component",
   "main": "dist/SearchField.js",
   "scripts": {
@@ -15,12 +15,16 @@
     "searchbar",
     "search"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nutboltu/react-search-field.git"
+  },
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-syntax-highlighter": "^5.7.0",
+    "react-syntax-highlighter": "^6.1.2",
     "prop-types": "^15.6.0",
-    "typeco": "^0.0.1"
+    "typeco": "^0.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
