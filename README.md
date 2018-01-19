@@ -1,7 +1,7 @@
 # React Search Field
 An elegant search field component for React.
 
-See [usage and examples]( https://nutboltu.github.io/react-search-field/).
+See [Demo and Documentation]( https://nutboltu.github.io/react-search-field/).
 
 ## Props
 
