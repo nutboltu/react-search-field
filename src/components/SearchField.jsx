@@ -13,12 +13,12 @@ const searchFieldStyle = {
 };
 
 const searchFieldButtonStyle = {
-  height: SEARCH_BUTTON_EDGE,
-  width: SEARCH_BUTTON_EDGE,
+  height: SEARCH_BUTTON_EDGE - 2, // reduces 2px because of top and bottom border
+  width: SEARCH_BUTTON_EDGE - 2,
   outline: 'none',
   backgroundColor: 'white',
   cursor: 'pointer',
-  padding: 0,
+  padding: 5,
   boxSizing: 'border-box',
   appearance: 'none',
   border: 'none',
@@ -33,6 +33,7 @@ const searchFieldInputStyle = {
   flex: 1,
   color: '#5a5a5a',
   fontWeight: 100,
+  height: SEARCH_BUTTON_EDGE - 2,
 };
 
 const SearchIcon = () => {
@@ -87,14 +88,14 @@ class SearchField extends React.Component {
       value: event.target.value,
     });
     if (TypeChecker.isFunction(this.props.onChange)) {
-      this.props.onChange(this.state.value, event);
+      this.props.onChange(event.target.value, event);
     }
   }
 
   onEnterBound(event) {
     const isEnterPressed = event.which === ENTER_KEY || event.keyCode === ENTER_KEY;
     if (isEnterPressed && TypeChecker.isFunction(this.props.onEnter)) {
-      this.props.onEnter(this.state.value, event);
+      this.props.onEnter(event.target.value, event);
     }
   }
 

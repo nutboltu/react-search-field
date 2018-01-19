@@ -19,6 +19,13 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         use: 'babel-loader',
       },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
+      },
     ],
   },
   devServer: {
