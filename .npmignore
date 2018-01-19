@@ -1,0 +1,12 @@
+.vscode
+.idea
+src/
+docs/
+README.md
+LICENSE
+.babelrc
+.gitignore
+.eslintignore
+.eslintrc
+yarn.lock
+.travis.yml
