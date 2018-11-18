@@ -28,7 +28,7 @@ npm install react-search-field --save
 ## Usage
 
 ```javascript
-import SearchField from "react-search-field" ;
+import SearchField from "react-search-field";
 
 <SearchField
   placeholder="Search..."
