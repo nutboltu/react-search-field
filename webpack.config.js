@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -44,5 +45,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/docs/index.html'),
     }),
+    new CopyWebpackPlugin([{
+      from: path.join(__dirname, 'src/docs/react-search-field.png'),
+    }]),
   ],
 };
