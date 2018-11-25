@@ -1,13 +1,14 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  entry: path.resolve(__dirname, 'src/docs/index.jsx'),
+  mode: 'production',
+  entry: path.resolve(__dirname, 'src/components/SearchField.jsx'),
   output: {
-    filename: 'bundle.min.js',
-    path: path.resolve(__dirname, 'docs'),
+    filename: 'index.min.js',
+    path: path.resolve(__dirname, 'dist'),
+    library: 'ReactSearch',
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -22,18 +23,7 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
-      },
     ],
-  },
-  devServer: {
-    contentBase: 'docs',
-    host: 'localhost',
   },
   plugins: [
     new TerserPlugin({
@@ -41,8 +31,9 @@ module.exports = {
       parallel: true,
       terserOptions: { ecma: 8 },
     }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/docs/index.html'),
-    }),
+  ],
+  externals: [
+    'react',
+    'react-dom',
   ],
 };

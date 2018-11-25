@@ -40,6 +40,12 @@ import SearchField from "react-search-field";
 />
 ```
 
+## Run
+
+```bash
+npm start
+```
+
 ## License
 
 MIT Licensed. Copyright (c) Farhad Yasir 2018.
