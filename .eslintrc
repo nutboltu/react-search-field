@@ -13,5 +13,8 @@
   },
   "plugins": [
     "react"
-  ]
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": false
+  }
 }
