@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { github } from 'react-syntax-highlighter/dist/styles';
+import { github } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import TypeChecker from 'typeco';
 
 import SearchField from '../components/SearchField';
@@ -35,8 +35,8 @@ const ExampleList = props => (
     </div>
     <div className="list-body">
       {
-        props.list.map((item, index) =>
-          (<ul key={index}>
+        props.list.map((item, index) => (
+          <ul key={index}>
             <li> {item.name} </li>
             <li> {item.email} </li>
           </ul>))
@@ -44,6 +44,7 @@ const ExampleList = props => (
     </div>
   </div>
 );
+
 class App extends Component {
   constructor(props) {
     super(props);

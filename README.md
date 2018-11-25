@@ -1,4 +1,5 @@
 # React Search Field
+
 [![dependencies Status](https://david-dm.org/nutboltu/react-search-field/status.svg)](https://david-dm.org/nutboltu/react-search-field)  [![Build Status](https://travis-ci.org/nutboltu/react-search-field.svg?branch=master)](https://travis-ci.org/nutboltu/react-search-field)
 
 An elegant search field component for React.
@@ -6,6 +7,7 @@ An elegant search field component for React.
 See [Demo and Documentation]( https://nutboltu.github.io/react-search-field/).
 
 ![Screenshot](/docs/react-search-field.png)
+
 ## Props
 
 The component takes the following props.
