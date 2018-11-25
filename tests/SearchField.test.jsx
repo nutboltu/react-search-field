@@ -19,10 +19,9 @@ describe('<SearchField />', () => {
     const component = shallow(<SearchField searchText={searchText} />);
     expect(component.children().at(0).props().value).to.eql(searchText);
   });
-  it('should render searchText as value', () => {
-    const searchText = 'testSearchText';
-    const component = shallow(<SearchField searchText={searchText} />);
-    expect(component.children().at(0).props().value).to.eql(searchText);
+  it('should render search button', () => {
+    const component = shallow(<SearchField />);
+    expect(component.find('button')).to.have.length(1);
   });
   it('should render SearchIcon', () => {
     const component = shallow(<SearchField />);
