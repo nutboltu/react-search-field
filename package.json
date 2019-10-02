@@ -23,7 +23,7 @@
     "url": "https://github.com/nutboltu/react-search-field.git"
   },
   "dependencies": {
-    "prop-types": "15.6.2",
+    "prop-types": "15.7.2",
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "typeco": "1.0.0"
@@ -42,7 +42,7 @@
     "css-loader": "0.28.9",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.7.0",
-    "eslint": "4.15.0",
+    "eslint": "6.5.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
