@@ -8,7 +8,7 @@
     "build:docs": "rm -rf docs/ && webpack -p --progress ",
     "build": "npm run build:component && npm run build:docs",
     "start": "npm run build:docs && webpack-dev-server",
-    "test": "mocha --require @babel/register --require ./tests/test.config.js \"tests/**/*.test.jsx\""
+    "test": "jest"
   },
   "keywords": [
     "react",
@@ -34,10 +34,7 @@
     "@babel/plugin-proposal-class-properties": "7.5.5",
     "@babel/preset-env": "7.6.3",
     "@babel/preset-react": "7.6.3",
-    "@babel/register": "7.6.2",
-    "@babel/runtime": "7.6.3",
     "babel-loader": "8.0.6",
-    "chai": "4.2.0",
     "copy-webpack-plugin": "5.0.4",
     "css-loader": "3.2.0",
     "enzyme": "3.10.0",
@@ -48,7 +45,7 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.16.0",
     "html-webpack-plugin": "3.2.0",
-    "mocha": "6.2.1",
+    "jest": "^24.9.0",
     "react-syntax-highlighter": "11.0.2",
     "style-loader": "1.0.0",
     "terser-webpack-plugin": "2.1.3",
