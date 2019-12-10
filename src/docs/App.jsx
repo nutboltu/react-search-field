@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GitHubButton from 'react-github-btn';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { github } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import TypeChecker from 'typeco';
@@ -79,7 +80,35 @@ class App extends Component {
   render() {
     return (
       <div className="react-search-field-demo container">
-        <h3>React Search Field</h3>
+        <div>
+          <h3>React Search Field</h3>
+          <div className="github-button">
+            <GitHubButton
+              href="https://github.com/nutboltu/react-search-field"
+              data-icon="octicon-star"
+              data-show-count="true"
+              aria-label="Star nutboltu/react-search-field on GitHub">
+                Star
+            </GitHubButton>
+          </div>
+          <div className="github-button">
+            <GitHubButton
+              href="https://github.com/nutboltu/react-search-field/issues"
+              data-icon="octicon-issue-opened"
+              data-show-count="true"
+              aria-label="Issue nutboltu/react-search-field on GitHub">
+                Issue
+            </GitHubButton>
+          </div>
+          <div className="github-button">
+            <GitHubButton
+              href="https://github.com/sponsors/nutboltu"
+              data-icon="octicon-heart"
+              aria-label="Sponsor @nutboltu on GitHub">
+                Sponsor
+            </GitHubButton>
+          </div>
+        </div>
         <div>
           <h5>Installation </h5>
           <SyntaxHighlighter style={github}>

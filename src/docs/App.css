@@ -1,6 +1,7 @@
-.react-search-field-demo{
+.react-search-field-demo {
   padding: 20px;
 }
+
 h3, h5 {
   margin: 20px 0;
 }
@@ -28,4 +29,9 @@ ul {
 .list-body {
   display: flex;
   flex-direction: column;
+}
+
+.github-button {
+  padding: 0 5px;
+  display: inline-block;
 }
