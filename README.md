@@ -1,6 +1,9 @@
 # React Search Field
 
 [![dependencies Status](https://david-dm.org/nutboltu/react-search-field/status.svg)](https://david-dm.org/nutboltu/react-search-field)  [![Build Status](https://travis-ci.org/nutboltu/react-search-field.svg?branch=master)](https://travis-ci.org/nutboltu/react-search-field)
+<a href="https://twitter.com/intent/follow?screen_name=nutboltu">
+   <img src="https://img.shields.io/twitter/follow/nutboltu.svg?label=Follow%20@nutboltu" alt="Follow @nutboltu" />
+</a>
 
 [![NPM](https://nodei.co/npm/react-search-field.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-search-field/)
 
