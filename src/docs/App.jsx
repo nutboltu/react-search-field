@@ -22,8 +22,7 @@ const exampleList = [
 
 const getMatchedList = (searchText) => {
   if (TypeChecker.isEmpty(searchText)) return exampleList;
-  return exampleList.filter(item => item.name.includes(searchText) ||
-    item.name.includes(searchText));
+  return exampleList.filter(item => item.name.toLowerCase().includes(searchText.toLowerCase()));
 };
 
 const ExampleList = props => (
