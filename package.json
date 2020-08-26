@@ -47,7 +47,7 @@
     "eslint-plugin-react": "7.16.0",
     "html-webpack-plugin": "3.2.0",
     "jest": "^24.9.0",
-    "react-syntax-highlighter": "11.0.2",
+    "react-syntax-highlighter": "13.5.1",
     "style-loader": "1.0.0",
     "terser-webpack-plugin": "4.1.0",
     "webpack": "4.41.1",
