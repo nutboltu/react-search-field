@@ -52,7 +52,7 @@
     "terser-webpack-plugin": "4.1.0",
     "webpack": "4.41.1",
     "webpack-cli": "3.3.9",
-    "webpack-dev-server": "3.8.2"
+    "webpack-dev-server": "3.11.0"
   },
   "author": "Farhad Yasir",
   "license": "MIT"
