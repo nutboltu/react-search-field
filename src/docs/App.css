@@ -30,8 +30,3 @@ ul {
   display: flex;
   flex-direction: column;
 }
-
-.github-button {
-  padding: 0 5px;
-  display: inline-block;
-}
