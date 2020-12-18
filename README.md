@@ -1,7 +1,6 @@
 # React Search Field
 
-[![dependencies Status](https://david-dm.org/nutboltu/react-search-field/status.svg)](https://david-dm.org/nutboltu/react-search-field)  [![Actions Status](https://github.com/nutboltu/react-search-field/workflows/.github/workflows/node.js.yml/badge.svg)](https://github.com/nutboltu/react-search-field/actions)
-
+[![dependencies Status](https://david-dm.org/nutboltu/react-search-field/status.svg)](https://david-dm.org/nutboltu/react-search-field)  [![Actions Status](https://github.com/nutboltu/react-search-field/workflows/.github/workflows/node.js.yml/badge.svg)](https://github.com/nutboltu/react-search-field/actions) 
 <a href="https://twitter.com/intent/follow?screen_name=nutboltu">
    <img src="https://img.shields.io/twitter/follow/nutboltu.svg?label=Follow%20@nutboltu" alt="Follow @nutboltu" />
 </a>
