@@ -5,7 +5,7 @@
   "main": "dist/index.min.js",
   "scripts": {
     "build:component": "rm -rf dist/ && webpack -p --progress --config=webpack.production.config.js",
-    "build:docs": "rm -rf docs/ && webpack -p --progress ",
+    "build:docs": "rm -rf docs/ && webpack -p --progress",
     "build": "npm run build:component && npm run build:docs",
     "start": "npm run build:docs && webpack-dev-server",
     "test": "jest",
