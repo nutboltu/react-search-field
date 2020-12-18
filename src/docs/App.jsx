@@ -52,10 +52,12 @@ class App extends Component {
       basicExampleList: [...exampleList],
       onEnterExampleList: [...exampleList],
       onSearchClickExampleList: [...exampleList],
+      onBlurExampleList: [...exampleList],
     };
     this.onBasicExampleChange = this.onBasicExampleChange.bind(this);
     this.onEnterExample = this.onEnterExample.bind(this);
     this.onSearchClickExample = this.onSearchClickExample.bind(this);
+    this.onBlurExample = this.onBlurExample.bind(this);
   }
 
   onBasicExampleChange(value) {
@@ -73,6 +75,12 @@ class App extends Component {
   onSearchClickExample(value) {
     this.setState({
       onSearchClickExampleList: getMatchedList(value),
+    });
+  }
+
+  onBlurExample(value) {
+    this.setState({
+      onBlurExampleList: getMatchedList(value),
     });
   }
 
@@ -151,6 +159,19 @@ class App extends Component {
           />
           <ExampleList
             list={this.state.onSearchClickExampleList}
+          />
+        </div>
+        <div>
+          <h5>Example: onBlur  </h5>
+          <SyntaxHighlighter style={github}>
+            {exampleSnippets.onBlurExample}
+          </SyntaxHighlighter>
+          <SearchField
+            placeholder="Search item"
+            onBlur={this.onBlurExample}
+          />
+          <ExampleList
+            list={this.state.onBlurExampleList}
           />
         </div>
       </div>

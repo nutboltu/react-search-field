@@ -25,6 +25,7 @@ The component takes the following props.
 | `onChange`        | _function_ | Callback function to invoke when the user press any key. The function  should contain two parameters(value, event). |
 | `onEnter`         | _function_ | Callback function to invoke when the user press enter after pressing few keys. The function  should contain two parameters(value, event). |
 | `onSearchClick`          | _function_ | Callback function to invoke when the user click the search button. The function  should contain one parameter(value). |
+| `onBlur`          | _function_ | Callback function to invoke when the user blurs the search box. The function  should contain two parameters(value, event). |
 
 ## Installation
 

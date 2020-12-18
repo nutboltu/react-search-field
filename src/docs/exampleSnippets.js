@@ -1,5 +1,5 @@
 export default {
-  installation: 'npm install react-search-field  --save ',
+  installation: "npm install react-search-field  --save ",
   basicExample: `import SearchField from 'react-search-field';
 
 <SearchField 
@@ -17,5 +17,11 @@ export default {
 <SearchField 
   placeholder='Search item'
   onSearchClick={onSearchClick}
+/>`,
+  onBlurExample: `import SearchField from 'react-search-field';
+
+<SearchField 
+  placeholder='Search item'
+  onBlur={onBlur}
 />`,
 };
