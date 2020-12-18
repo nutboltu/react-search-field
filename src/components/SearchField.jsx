@@ -73,6 +73,7 @@ class SearchField extends React.Component {
     this.onChangeBound = this.onChangeBound.bind(this);
     this.onEnterBound = this.onEnterBound.bind(this);
     this.onSearchClick = this.onSearchClick.bind(this);
+    this.onBlurBound = this.onBlurBound.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -105,6 +106,12 @@ class SearchField extends React.Component {
     }
   }
 
+  onBlurBound(event) {
+    if (TypeChecker.isFunction(this.props.onBlur)) {
+      this.props.onBlur(event.target.value, event);
+    }
+  }
+
   render() {
     const {
       classNames,
@@ -122,6 +129,7 @@ class SearchField extends React.Component {
           style={searchFieldInputStyle}
           onChange={this.onChangeBound}
           onKeyPress={this.onEnterBound}
+          onBlur={this.onBlurBound}
           placeholder={placeholder}
           type="text"
           value={this.state.value}
@@ -146,6 +154,7 @@ SearchField.propTypes = {
   onChange: PropTypes.func,
   onEnter: PropTypes.func,
   onSearchClick: PropTypes.func,
+  onBlur: PropTypes.func,
 };
 
 SearchField.defaultProps = {
@@ -155,6 +164,7 @@ SearchField.defaultProps = {
   onChange: null,
   onEnter: null,
   onSearchClick: null,
+  onBlur: null,
 };
 
 export default SearchField;
