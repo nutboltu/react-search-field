@@ -1,5 +1,5 @@
 export default {
-  installation: "npm install react-search-field  --save ",
+  installation: 'npm install react-search-field  --save ',
   basicExample: `import SearchField from 'react-search-field';
 
 <SearchField 
