@@ -137,6 +137,7 @@ class SearchField extends React.Component {
         <button
           className="react-search-field-button"
           type="button"
+          aria-label="search button"
           style={searchFieldButtonStyle}
           onClick={this.onSearchClick}
         >
