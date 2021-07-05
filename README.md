@@ -22,6 +22,7 @@ The component takes the following props.
 | `classNames`         | string  | Additional classnames for the component |
 | `searchText`  | string  | Initial search value of the input |
 | `placeholder`  | string  | placeholder for the search input |
+| `disabled`  | boolean  | Disabling the search input |
 | `onChange`        | _function_ | Callback function to invoke when the user press any key. The function  should contain two parameters(value, event). |
 | `onEnter`         | _function_ | Callback function to invoke when the user press enter after pressing few keys. The function  should contain two parameters(value, event). |
 | `onSearchClick`          | _function_ | Callback function to invoke when the user click the search button. The function  should contain one parameter(value). |
@@ -54,4 +55,4 @@ npm start
 
 ## License
 
-MIT Licensed. Copyright (c) Farhad Yasir 2018.
+MIT Licensed. Copyright (c) Farhad Yasir 2021.
