@@ -12,18 +12,18 @@ const searchFieldStyle = {
   height: SEARCH_BUTTON_EDGE,
 };
 
-const searchFieldButtonStyle = {
+const searchFieldButtonStyle = (disabled) => ({
   height: SEARCH_BUTTON_EDGE - 2, // reduces 2px because of top and bottom border
   width: SEARCH_BUTTON_EDGE - 2,
   outline: 'none',
   backgroundColor: 'white',
-  cursor: 'pointer',
+  cursor: disabled ? 'auto' : 'pointer',
   padding: 5,
   boxSizing: 'border-box',
   appearance: 'none',
   border: 'none',
   borderLeft: '1px #ddd solid',
-};
+});
 
 const searchFieldInputStyle = {
   outline: 'none',
@@ -67,6 +67,7 @@ const SearchField = ({
   classNames,
   searchText,
   placeholder,
+  disabled,
   onChange,
   onEnter,
   onSearchClick,
@@ -121,13 +122,15 @@ const SearchField = ({
         placeholder={placeholder}
         type="text"
         value={value}
+        disabled={disabled}
       />
       <button
         className="react-search-field-button"
         type="button"
         aria-label="search button"
-        style={searchFieldButtonStyle}
+        style={searchFieldButtonStyle(disabled)}
         onClick={onSearchClickHandler}
+        disabled={disabled}
       >
         <SearchIcon />
       </button>
@@ -139,6 +142,7 @@ SearchField.propTypes = {
   classNames: PropTypes.string,
   searchText: PropTypes.string,
   placeholder: PropTypes.string,
+  disabled: PropTypes.bool,
   onChange: PropTypes.func,
   onEnter: PropTypes.func,
   onSearchClick: PropTypes.func,
@@ -149,6 +153,7 @@ SearchField.defaultProps = {
   classNames: '',
   searchText: '',
   placeholder: 'Search',
+  disabled: false,
   onChange: null,
   onEnter: null,
   onSearchClick: null,
