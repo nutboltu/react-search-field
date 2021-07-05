@@ -54,4 +54,4 @@ npm start
 
 ## License
 
-MIT Licensed. Copyright (c) Farhad Yasir 2018.
+MIT Licensed. Copyright (c) Farhad Yasir 2021.
