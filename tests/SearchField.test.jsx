@@ -15,7 +15,7 @@ describe('<SearchField />', () => {
   it('should render searchText', () => {
     const searchText = 'testSearchText';
     const component = shallow(<SearchField searchText={searchText} />);
-    expect(component.children().at(0).props().value).toEqual(searchText);
+    expect(component.find('input').props().value).toEqual(searchText);
   });
   it('should render search button', () => {
     const component = shallow(<SearchField />);
