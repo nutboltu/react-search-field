@@ -29,7 +29,7 @@ const searchFieldInputStyle = {
   outline: 'none',
   border: 'none',
   fontSize: 14,
-  padding: 10,
+  padding: '0 8px',
   flex: 1,
   color: '#5a5a5a',
   fontWeight: 100,
@@ -87,8 +87,8 @@ const SearchField = ({
   }, [onChange, setValue]);
 
   const onEnterHandler = useCallback((event) => {
-    const isEnterPressed = event.which === ENTER_KEY ||
-      event.keyCode === ENTER_KEY;
+    const isEnterPressed = event.which === ENTER_KEY
+      || event.keyCode === ENTER_KEY;
     if (isEnterPressed && TypeChecker.isFunction(onEnter)) {
       onEnter(event.target.value, event);
     }
@@ -98,7 +98,7 @@ const SearchField = ({
     if (TypeChecker.isFunction(onSearchClick)) {
       onSearchClick(value);
     }
-  }, [onSearchClick]);
+  }, [onSearchClick, value]);
 
   const onBlurHandler = useCallback((event) => {
     if (TypeChecker.isFunction(onBlur)) {

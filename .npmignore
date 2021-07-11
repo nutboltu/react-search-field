@@ -1,11 +1,17 @@
+.github
 .vscode
 .idea
 src/
 docs/
+test/
 README.md
+jest.config.js
 LICENSE
+SECURITY.md
 .babelrc
 .gitignore
 .eslintignore
 .eslintrc
+webpack.config.js
+webpack.production.config.js
 yarn.lock
